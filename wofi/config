@@ -1,0 +1,13 @@
+# What to show
+show = drun
+allow_markup = true
+insensitive = true
+
+# Launcher appearance
+prompt = 
+width = 800
+height = 500
+location = center
+
+# Default terminal
+term = ghostty

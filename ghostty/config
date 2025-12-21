@@ -1,0 +1,13 @@
+# Font
+font-family = "JetBrainsMono Nerd Font"
+font-size = 12
+
+# Cursor Style
+cursor-style = block
+
+# Opacity
+background-opacity = 1.0
+
+# Padding
+window-padding-x = 10
+window-padding-y = 10
