@@ -81,6 +81,9 @@ client.placeholder		#3b3b3b		#3b3b3b		#000000		#3b3b3b		#3b3b3b
 
     # Shut off display after 5 minutes
     exec_always --no-startup-id swayidle -w timeout 300 'swaylock -f -c 000000 && swaymsg "output * power off"' resume 'swaymsg "output * power on"' before-sleep 'swaylock -f -c 000000'
+
+    # Exit Sway
+    bindsym $mod+Shift+t exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
