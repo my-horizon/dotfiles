@@ -68,6 +68,18 @@ return {
 				on_attach = on_attach,
 			})
 
+			vim.lsp.config("jsonls", {
+				cmd = { "/run/current-system/sw/bin/jsonls" },
+				capabilities = capabilities,
+				on_attach = on_attach,
+			})
+
+			vim.lsp.config("yamlls", {
+				cmd = { "/run/current-system/sw/bin/yamlls" },
+				capabilities = capabilities,
+				on_attach = on_attach,
+			})
+
 			vim.lsp.config("lua_ls", {
 				cmd = { "/run/current-system/sw/bin/lua-lsp" },
 				capabilities = capabilities,

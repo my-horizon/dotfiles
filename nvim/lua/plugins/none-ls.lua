@@ -11,6 +11,13 @@ return {
 						"--style={BasedOnStyle: llvm, ReflowComments: false}",
 					},
 				}),
+				null_ls.builtins.formatting.prettier.with({
+					cmd = "/run/current-system/sw/bin/prettier",
+					filetypes = { "json" },
+				}),
+				null_ls.builtins.formatting.yamlfmt.with({
+					cmd = "/run/current-system/sw/bin/yamlfmt",
+				}),
 				null_ls.builtins.formatting.stylua.with({
 					cmd = "/run/current-system/sw/bin/stylua",
 				}),
