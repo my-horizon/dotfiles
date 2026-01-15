@@ -41,6 +41,7 @@
 "format-ethernet":	"󰈀  connected",
 "format-disconnected":	"󰤭  disconnected",
 "interval":	5,
+"on-click":	"nm-connection-editor",
 "tooltip":	false
 },
 "pulseaudio":	{
